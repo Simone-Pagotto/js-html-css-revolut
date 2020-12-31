@@ -1,0 +1,204 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* debugging */
+
+.debug .navbar{
+  border: 1px solid coral;
+}
+
+.debug [class*="navbar-"] {
+  background-color: khaki;
+  height: 100%;
+}
+
+/* JS CLASS */
+.hidden {
+  display: none;
+}
+
+.flex{
+  display: flex;
+}
+/* STYLE CLASS */
+
+.bold-grey {
+  font-weight: 600;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: rgb(171, 177, 183);
+}
+
+.standard-grey {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: rgb(171, 177, 183);
+}
+
+.normal-blue {
+  font-weight: 400;
+  font-size: 0.5em;
+  color: rgb(6, 102, 235);
+}
+
+.w25 li {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: rgb(171, 177, 183);
+}
+
+.w25 li:hover {
+  color: black;
+}
+
+
+.container {
+  width:95%;
+  margin: auto;
+}
+
+.navbar {
+  height: 100px;
+  display: flex;
+}
+
+.empty{
+  display: flex;
+  flex-basis : calc(100% / 4);
+  flex-shrink: 2;
+}
+
+.navbar-left {
+  display: flex;
+  justify-content: space-between;
+  flex-basis : calc(100% / 3);
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.navbar-left img{
+  width: calc(100% / 3);
+}
+
+.navbar-left .bold-grey:hover {
+  color:black;
+}
+
+.navbar-right {
+  display: flex;
+  flex-basis: calc(100% / 2);
+  flex-grow: 2;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-end;
+  flex
+  position: relative;
+}
+
+.menu li{
+  display: inline-flex;
+  margin: 1em;
+}
+
+.navbar-right .standard-grey:hover {
+  color : black;
+}
+
+.list {
+  border-radius: 4px;
+  border: 1px solid grey;
+  box-shadow: 1 1  lightgrey;
+}
+
+.features-list {
+  position: absolute;
+  top: calc(100px /4 *3);
+  left: 50%;
+  transform: translate(-25% , 0%);
+  width: 650px;
+}
+
+.list li{
+  display:flex;
+  flex-direction: column;
+}
+
+
+
+
+.plans-list, .about-list, .help-list {
+  flex-direction: column;
+  position: absolute;;
+  top: calc(100px /4 *3);
+}
+
+.w25{
+  width: 25%;
+}
+
+.w25 img{
+  width: 15px;
+  color: white;
+}
+
+.w25 span{
+  font-size: 0.9em;
+  font-weight: 600;
+  color: rgb(171, 177, 183);
+  opacity: 0.7;
+}
+
+.w25 li{
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.inline{
+  display: inline-flex;
+  align-items: center;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(171, 177, 183);
+  opacity: 0.7;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.buttonSignIn{
+  color: rgb(25, 28, 31);
+  font-weight: 600;
+  font-size: 1.2em;
+  border: none;
+  background-color: rgb(237, 237, 237);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.buttonSignIn:hover{
+  background-color: rgb(171, 177, 183);
+}
+
+.buttonGetTheApp{
+  color: white;
+  font-weight: 600;
+  font-size: 1.2em;
+  border: none;
+  background-color: rgb(25, 28, 31);
+  border-radius: 10px;
+  padding: 12px 20px;
+}
+
+.buttonGetTheApp:hover {
+  opacity: 0.7;
+}
